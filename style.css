@@ -1,5 +1,5 @@
 *{
-    color: blue;
+    color: black;
     margin: 10px;
     font: 14px Tahoma;
     background-color: burlywood; 
@@ -7,5 +7,49 @@
 
 button.subpage{
 color: black;
+
+}
+
+.box {
+    display: flex;
+    
+}
+
+.box div {
+ border: solid 1px black;
+}
+
+.grid-container {
+display: grid;
+grid-template-rows: 100px 100px ;
+grid-template-columns: 100px 100px 100px;
+grid-gap: 1px;
+}
+
+.grid-item1 {
+background: lightblue;
+border: solid 1px black ;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 2;
+}
+
+.grid-item2 {
+background: lightblue;
+border: solid 1px black  ;
+grid-column-start: 3;
+grid-column-end: 4;
+grid-row-start: 1;
+grid-row-end: 3;
+
+}
+.grid-item3 {
+background: lightblue;
+border: solid 1px black ;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 2;
+grid-row-end: 3;
 
 }
