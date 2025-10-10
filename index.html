@@ -1,21 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-            <link href="style.css" rel="stylesheet" />
+        <title>Hello World</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <link href="style.css" rel="stylesheet" />
     </head>
     <body>
-        <h1>My Website</h1>
+         
+        
+       <header>
+        <!--navigation bar-->
+            <nav id="nav">
+                <ul>
+                    <p>Leung Hung Cheung</p>
+                    <button id="about" class="subpage">About me</button>
+                    <button id="ga" class="subpage">Gallery</button>
+                    <button id="cv" class="subpage">Cv</button>
+                </ul>
+            </nav>
 
-        <div id="main">
-            <!-- this is a comment -->
-            This is my personal website.
-            <button >press me</button>
-             <button  class="subpage">about me</button>
-             <button id="hm"class="subpage">hobbies me</button>
-                 <p> My self-introdution is one sentence. </p>
-                 <!--<img src="me.png"/>-->   
-        </div>
+            <!--image & intro-->
+            <div class="flex-container">
+             <img src="wind.png"/> 
+               
+            <div class="text-containter">
+                <h1>Welcome to my website!</h1>
+                 <p>This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.</p>
+                 <a class ="ig_button" href="https://www.instagram.com/zzzmac_/" target="_blank"> Follow me on Instagram </a>
+            </div>
+            </div>
+            
+        </header>
+        <section id="vis-piechart">
+            This is GenAI pie chart
+        </section>
+        <section id="vis-scatterplot">
+            This is a my ownscatterplot
+        </section>
 
-        <div class="box">
+        <script src="code.js"> </script>
+        <script src="src/scatterplot.js"> </script>
+        <script src="src/piechat.js"> </script>
+    </body>
+</html>
+
+
+ <!--<div class="grid-container">
+            <div id="w1" class="grid-item1">My work 1</div>
+            <div class="grid-item2">My work 2</div>
+            <div class="grid-item3">My work 3</div>
+        </div> -->
+
+<!-- <div class="box">
             <div>One</div>
             <div>Two</div>
             <div>Three
@@ -23,18 +61,3 @@
                 <br>second line
              </div>
         </div>
-
-        <div class="grid-container">
-            <div id="w1" class="grid-item1">My work 1</div>
-            <div class="grid-item2">My work 2</div>
-            <div class="grid-item3">My work 3</div>
-        </div> 
-
-
-        <script src="code.js"> </script>
-    </body>
-</html>
-
-
-
-

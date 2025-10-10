@@ -1,16 +1,95 @@
-/* *{
-    color: black;
-    margin: 10px;
-    font: 14px Tahoma;
-    background-color: burlywood; 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+ 
+:root{
+    --base-color: #ffffff;
+    --text-colr: #000000;
+    --primary-color: #ffc06e;
+    --secondary-color:#8D8DFF;
+    --color-1: #F9F6F3;
+    --color-2: #F3F7F9;
+    --color-3: #F6F3F9;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-colr);
+}
+body{
+    padding: 1em;
+    background-color: var(--base-color);
+}
+h1, h2, h3{
+    font-size: 2em;
+    font-family: Merriweather, Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+nav{
+    margin: 1em auto 1em auto;
+    width: min(1000px,100%);
+    font-size: 1.5em;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 2em;
+}
+
+nav ul p:first-child {
+    margin-right: auto;
+    font-size: 2em;
 }
 
 button.subpage{
-color: black;
+    border-radius: .3em;
+    font-size: 1.1em ;
+    color: black;
+    background-color: antiquewhite;
+}
+
+header, section{
+    margin: 2em auto;
+    width: min(75em,100%);
+    background-color: antiquewhite;
+    padding: min(2em,15%);
+    border-radius: 1em;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+}
+
+.ig_button{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: orange;
+    padding: .75em 1em;
+    margin-top: 2em;
+    border-radius: .5em;
+    font-weight: 600;
+    
+}
+.text-containter{
+    flex: 0 1 40em;
+
 
 }
 
-.box {
+
+/* .box {
     display: flex;
     
 }
@@ -52,9 +131,10 @@ grid-column-end: 3;
 grid-row-start: 2;
 grid-row-end: 3;
 
-}
-*/
-body {
+} */
+
+
+/*body {
             font-family: Arial;
             max-width: 600px;
             margin: 20px auto;
@@ -111,4 +191,4 @@ body {
         .grid-item1:hover, .grid-item2:hover, .grid-item3:hover {
             background: #e0e0e0;
         }
-        
+        */

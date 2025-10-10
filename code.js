@@ -1,9 +1,9 @@
-var title = document.querySelector("h1");
+//var title = document.querySelector("h1");
 var button_pressme = document.querySelector("button");
 var button_hm = document.querySelector("#hm");
 
 
-            title.innerHTML= "This is the title from code.js!";
+            //title.innerHTML= "This is the title from code.js!";
             button_pressme.addEventListener("click", pressme);
             button_hm.addEventListener("click", hobbit);
             
@@ -29,3 +29,4 @@ function welcomeToWork1(){
 mynode.innerHTML =("Thank you for your interest!");
 
 }
+
