@@ -1,4 +1,5 @@
 // --- Creative Artworks Dataset ---
+(function(){
 const artworkData = [
     { year: 2010, type: "Painting" },
     { year: 2012, type: "Painting" },
@@ -118,3 +119,4 @@ function drawScatterplot(data) {
 // --- Initial Draw ---
 drawScatterplot(artworkData);
 window.addEventListener('resize', () => drawScatterplot(artworkData));
+})();

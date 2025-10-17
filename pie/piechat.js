@@ -1,4 +1,5 @@
 // Data
+(function(){
 const salesData = [
     { temp: 12.0, sales: 190 },
     { temp: 14.5, sales: 220 },
@@ -157,3 +158,4 @@ drawPieChart(salesData);
 window.addEventListener('resize', () => {
     drawPieChart(salesData);
 });
+})();

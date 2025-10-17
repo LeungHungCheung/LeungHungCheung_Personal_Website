@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Hello World</title>
+        
+        -<title>Hello World</title> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <link href="style.css" rel="stylesheet" />
+        <link href="switch/switch.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://public.codepenassets.com/css/normalize-5.0.0.min.css"/>
+        <script src="https://public.codepenassets.com/js/prefixfree-1.0.7.min.js"></script>
+
+    
     </head>
     <body>
          
@@ -15,9 +21,9 @@
             <nav id="nav">
                 <ul>
                     <p>Leung Hung Cheung</p>
-                    <button id="about" class="subpage">About me</button>
-                    <button id="ga" class="subpage">Gallery</button>
-                    <button id="cv" class="subpage">Cv</button>
+                    <a id="about" class="subpage" href="#vis-scatterplot">About me</a>
+                    <a id="ga" class="subpage" href="my_work.html">Work</a>
+                    <a id="cv" class="subpage" href="cv.html">Cv</a>
                 </ul>
             </nav>
 
@@ -25,24 +31,39 @@
             <div class="flex-container">
              <img src="wind.png"/> 
                
-            <div class="text-containter">
-                <h1>Welcome to my website!</h1>
-                 <p>This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.</p>
-                 <a class ="ig_button" href="https://www.instagram.com/zzzmac_/" target="_blank"> Follow me on Instagram </a>
-            </div>
+                <div class="text-containter">
+                    <h1>Welcome to my website!</h1>
+                     <p>This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.This is my personal website.</p>
+                    <a class ="ig_button" href="https://www.instagram.com/zzzmac_/" target="_blank"> Follow me on Instagram </a>
+                </div>
             </div>
             
         </header>
-        <section id="vis-piechart">
-            This is GenAI pie chart
-        </section>
+
+        
+
         <section id="vis-scatterplot">
-            This is a my ownscatterplot
+            <h2>This is a my ownscatterplot. </h2>
         </section>
 
+
+        <section>
+            <div class="switch-container">
+                <div id="boo" class="hide">Boo!</div>
+                <label class="switch">
+                    <input id="toggle" type="checkbox" />
+                    <div class="slider round">
+                        <div>   <div class="ghost"> </div>
+                    </div>
+                </label>
+            </div>
+
+        </section>
+
+       <script src="switch/switch.js"> </script>
         <script src="code.js"> </script>
         <script src="src/scatterplot.js"> </script>
-        <script src="src/piechat.js"> </script>
+        
     </body>
 </html>
 

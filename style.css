@@ -11,6 +11,7 @@
 
 }
 *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,6 +20,7 @@
 html {
     font-family: Poppins, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-colr);
+    scroll-behavior: smooth;
 }
 body{
     padding: 1em;
@@ -63,6 +65,14 @@ header, section{
     border-radius: 1em;
 }
 
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+
+}
+
 .flex-container{
     display: flex;
     justify-content: center;
@@ -82,11 +92,12 @@ header, section{
     font-weight: 600;
     
 }
+
 .text-containter{
     flex: 0 1 40em;
 
-
 }
+
 
 
 /* .box {

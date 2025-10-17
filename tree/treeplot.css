@@ -1,0 +1,13 @@
+.tooltip {
+  transition: opacity 0.3s ease;
+}
+.node circle {
+  transition: all 0.2s ease;
+}
+.node circle:hover {
+  r: 12;
+  stroke-width: 3px !important;
+}
+.link {
+  transition: all 0.2s ease;
+}
