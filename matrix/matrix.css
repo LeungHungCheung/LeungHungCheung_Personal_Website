@@ -1,0 +1,116 @@
+body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .description {
+            color: #7f8c8d;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            line-height: 1.5;
+        }
+        #vis-matrix {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+            overflow: auto;
+        }
+        .matrix-cell {
+            stroke: #fff;
+            stroke-width: 1;
+            transition: all 0.3s;
+        }
+        .matrix-cell:hover {
+            opacity: 0.8;
+            stroke: #333;
+            stroke-width: 2;
+        }
+        .matrix-label {
+            font-size: 10px;
+            text-anchor: end;
+            dominant-baseline: middle;
+            font-weight: bold;
+        }
+        .matrix-label-top {
+            font-size: 10px;
+            text-anchor: end;
+            dominant-baseline: hanging;
+            font-weight: bold;
+        }
+        .tooltip {
+            position: absolute;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            border-radius: 4px;
+            pointer-events: none;
+            font-size: 14px;
+            max-width: 300px;
+            z-index: 10;
+        }
+        .legend {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+        }
+        .legend-square {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+        .group-divider {
+            stroke: #7f8c8d;
+            stroke-width: 2;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        .color-block {
+            stroke: #333;
+            stroke-width: 1;
+        }
