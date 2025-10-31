@@ -1,0 +1,56 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        #vis-ddm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            max-width: 900px; /* Limit max width for better presentation */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #vis-ddm svg {
+            display: block; /* Remove extra space below SVG */
+            width: 100%; /* Make SVG responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .map-path {
+            fill: #e0e0e0; /* Light gray for Japan's landmass */
+            stroke: #666; /* Darker gray for borders */
+            stroke-width: 0.5px;
+        }
+        .visited-dot {
+            fill: #e74c3c; /* Red color for visited places */
+            stroke: #fff; /* White border for dots */
+            stroke-width: 1.5px;
+            transition: all 0.2s ease-in-out; /* Smooth transition for hover */
+        }
+        .visited-dot:hover {
+            fill: #c0392b; /* Darker red on hover */
+            r: 7px; /* Enlarge dot on hover */
+            cursor: pointer;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }

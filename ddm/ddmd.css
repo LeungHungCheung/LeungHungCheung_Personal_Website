@@ -1,0 +1,60 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        #vis-ddm {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 95%;
+            max-width: 900px;
+        }
+        #vis-ddm svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        .map-path {
+            fill: #e0e0e0;
+            stroke: #666;
+            stroke-width: 0.5px;
+        }
+        .visitor-dot {
+            fill: #3498db;
+            stroke: #fff;
+            stroke-width: 1px;
+            fill-opacity: 0.7;
+        }
+        .visitor-dot:hover {
+            fill: #e74c3c;
+            fill-opacity: 1;
+            cursor: pointer;
+        }
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            padding: 8px;
+            font: 12px sans-serif;
+            background: rgba(44, 62, 80, 0.9);
+            color: #fff;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
