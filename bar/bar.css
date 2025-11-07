@@ -1,0 +1,126 @@
+body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        /* Styling for the dropdown menu */
+        .sort-controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .sort-controls label {
+            font-weight: bold;
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .sort-controls select {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            font-size: 1em;
+            cursor: pointer;
+            outline: none;
+            transition: border-color 0.2s ease-in-out;
+        }
+
+        .sort-controls select:hover,
+        .sort-controls select:focus {
+            border-color: #4682b4;
+        }
+
+        /* Container for the D3 chart */
+        #bar-chart-container {
+            width: 100%;
+            max-width: 900px; /* Maximum width for the chart on larger screens */
+            margin: 20px auto; /* Center the chart horizontally and add vertical margin */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            border-radius: 8px; /* Rounded corners */
+            padding: 15px; /* Inner padding */
+            background-color: #ffffff; /* White background for the chart area */
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        /* Styling for the bars in the chart */
+        .bar {
+            fill: #4682b4; /* Steelblue color for bars */
+            /* Removed transition here, D3 will handle transitions dynamically */
+        }
+
+        /* Hover effect for bars */
+        .bar:hover {
+            fill: #6a5acd; /* Slateblue color on hover */
+        }
+
+        /* Styling for axis text labels */
+        .axis text {
+            font-size: 10px;
+            fill: #555; /* Darker gray for axis labels */
+        }
+
+        /* Styling for axis lines and paths */
+        .axis path,
+        .axis line {
+            fill: none;
+            stroke: #ccc; /* Light gray for axis lines */
+            shape-rendering: crispEdges; /* Ensures sharp lines */
+        }
+
+        /* Styling for the chart title */
+        .chart-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            text-anchor: middle; /* Center the title horizontally */
+            fill: #333; /* Dark gray color */
+        }
+
+        /* Styling for axis labels */
+        .x-axis-label, .y-axis-label {
+            font-size: 0.9em;
+            text-anchor: middle; /* Center the axis labels */
+            fill: #555; /* Darker gray color */
+        }
+
+        /* Tooltip styling for interactive information on hover */
+        .tooltip {
+            position: absolute; /* Absolute positioning relative to the body */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+            color: white; /* White text */
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none; /* Important: prevents tooltip from blocking mouse events on elements below it */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for the tooltip */
+            text-align: center;
+            z-index: 1000; /* Ensure tooltip is on top of other elements */
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            #bar-chart-container {
+                padding: 10px; /* Reduce padding on smaller screens */
+            }
+            .chart-title {
+                font-size: 1.2em; /* Smaller title font */
+            }
+            .axis text {
+                font-size: 9px; /* Smaller axis text font */
+            }
+            .x-axis-label, .y-axis-label {
+                font-size: 0.8em; /* Smaller axis label font */
+            }
+            .sort-controls select {
+                font-size: 0.9em;
+                padding: 6px 10px;
+            }
+        }
