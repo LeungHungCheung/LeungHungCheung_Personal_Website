@@ -3,15 +3,12 @@ body {
             margin: 20px;
             background-color: #f4f4f4;
             color: #333;
-            /* NEW: Prevent browser default pan/zoom on touch devices */
             touch-action: none;
         }
-
         h1 {
             text-align: center;
             color: #2c3e50;
         }
-
         #vis-ddm {
             display: flex;
             justify-content: center;
@@ -21,47 +18,37 @@ body {
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
             padding: 20px;
-            max-width: 900px; /* Limit max width for better presentation */
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
-            /* NEW: Add overflow hidden to clip elements that zoom outside the box */
             overflow: hidden;
         }
-
         #vis-ddm svg {
-            display: block; /* Remove extra space below SVG */
-            width: 100%; /* Make SVG responsive */
-            height: auto; /* Maintain aspect ratio */
-            /* NEW: Add a background for the SVG to catch clicks for resetting zoom */
-            background-color: #fcfcfc; 
+            display: block;
+            width: 100%;
+            height: auto;
+            background-color: #fcfcfc;
         }
-
         .map-path {
-            fill: #e0e0e0; /* Light gray for Japan's landmass */
-            stroke: #666; /* Darker gray for borders */
+            fill: #e0e0e0;
+            stroke: #666;
             stroke-width: 0.5px;
-            /* NEW: Add cursor pointer to indicate clickability */
             cursor: pointer;
         }
-
-        /* NEW: Add a hover state for the map paths */
         .map-path:hover {
             fill: #d0d0d0;
         }
-
         .visited-dot {
-            fill: #e74c3c; /* Red color for visited places */
-            stroke: #fff; /* White border for dots */
+            fill: #e74c3c;
+            stroke: #fff;
             stroke-width: 1.5px;
-            transition: all 0.2s ease-in-out; /* Smooth transition for hover */
+            transition: all 0.2s ease-in-out;
         }
-
         .visited-dot:hover {
-            fill: #c0392b; /* Darker red on hover */
-            r: 7px; /* Enlarge dot on hover */
+            fill: #c0392b;
+            r: 7px;
             cursor: pointer;
         }
-
         .tooltip {
             position: absolute;
             text-align: center;
@@ -73,5 +60,5 @@ body {
             pointer-events: none;
             opacity: 0;
             transition: opacity 0.2s;
-            z-index: 10; /* NEW: Ensure tooltip is on top */
+            z-index: 10;
         }
